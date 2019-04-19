@@ -1,0 +1,9 @@
+rails_tut:
+  home: "https://www.railstutorial.org/"
+  book: "https://www.railstutorial.org/book"
+  contact: "https://www.railstutorial.org/contact"
+  help: "https://www.railstutorial.org/help"
+  screencasts: "http://screencasts.railstutorial.org/"
+rails_web:
+  home: "http://rubyonrails.org/"
+
