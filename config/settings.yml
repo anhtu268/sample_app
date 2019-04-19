@@ -4,6 +4,16 @@ rails_tut:
   contact: "https://www.railstutorial.org/contact"
   help: "https://www.railstutorial.org/help"
   screencasts: "http://screencasts.railstutorial.org/"
+  news: "http://news.railstutorial.org/"
 rails_web:
   home: "http://rubyonrails.org/"
-
+michael_hartl:
+  home: "http://www.michaelhartl.com/"
+img:
+  kitty: "kitten.jpg"
+  rails_logo: "rails.png"
+validates:
+  user:
+    maximum_name: 50
+    maximum_email: 255
+    minimum_pass: 6
