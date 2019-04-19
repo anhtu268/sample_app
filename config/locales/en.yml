@@ -71,6 +71,7 @@ en:
       form_email: "Email"
       form_pwd: "Password"
       form_submit: "Log in"
+      form_rem: "Remember me on this computer"
       p_1: "New user?"
       a_1: "Sign up now!"
 
