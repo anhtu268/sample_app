@@ -1,10 +1,29 @@
 en:
+  layouts:
+    application:
+      base_title: "Ruby on Rails Tutorial Sample App"
+    header:
+      nav_home: "Home"
+      nav_help: "Help"
+      nav_login: "Log in"
+    footer:
+      small_1: "The"
+      small_2: "by"
+      a_rails_tut: "Ruby on Rails Tutorial"
+      a_mh_page: "Michael Hartl"
+      a_about: "About"
+      a_contact: "Contact"
+      a_rails_tut_new: "News"
+
   static_pages:
     home:
-      page_title: "Home"
-      p_4: "This is the home page for the"
-      a_5: "Ruby on Rails Tutorial"
-      p_6: "sample application."
+      page_title: "Welcome to the Sample App"
+      h2_1: "This is the home page for the"
+      a_1: "Ruby on Rails Tutorial"
+      h2_2: "sample application."
+      kitty_alt: "Rails logo"
+      rails_logo_alt: "A kitty"
+      sign_up_but: "Sign up now!"
     help:
       page_title: "Help"
       p_4: "Get help on the Ruby on Rails Tutorial at the"
@@ -27,6 +46,8 @@ en:
       page_title: "Contact"
       p_4: "Contact the Ruby on Rails Tutorial about the sample app at the"
       a_5: "Contact page"
-  layouts:
-    application:
-      base_title: "Ruby on Rails Tutorial Sample App"
+
+  users:
+    new:
+      page_title: "Sign up"
+      p_1: "This will be a signup page for new users."
