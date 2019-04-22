@@ -15,6 +15,10 @@ en:
       a_contact: "Contact"
       a_rails_tut_new: "News"
 
+  shared:
+    error_messages:
+      the_form_contains: "The form contains"
+
   static_pages:
     home:
       page_title: "Welcome to the Sample App"
@@ -50,4 +54,13 @@ en:
   users:
     new:
       page_title: "Sign up"
-      p_1: "This will be a signup page for new users."
+      form_name: "Name"
+      form_email: "Email"
+      form_pwd: "Password"
+      form_pwd_cof: "Confirmation"
+      form_submit: "Create my account"
+
+  controllers:
+    users:
+      create_success: "Welcome to the Sample App!"
+      show_error: "User not found"

@@ -17,3 +17,6 @@ validates:
     maximum_name: 50
     maximum_email: 255
     minimum_pass: 6
+helper:
+  users:
+    size: 80
