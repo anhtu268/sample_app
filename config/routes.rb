@@ -1,10 +1,7 @@
 Rails.application.routes.draw do
   root "static_pages#home"
-
-  resources :static_pages do
-    get "home", on: :collection
-    get "help", on: :collection
-    get "about", on: :collection
-    get "contact", on: :collection
-  end
+  get "/help", to: "static_pages#help"
+  get "/about", to: "static_pages#about"
+  get "/contact", to: "static_pages#contact"
+  get "/signup", to: "users#new"
 end

@@ -1,0 +1,15 @@
+<footer class="footer">
+  <small>
+    <%= t ".small_1" %>
+    <%= link_to t(".a_rails_tut"), Settings.rails_tut.home %>
+    <%= t ".small_2" %>
+    <%= link_to t(".a_mh_page"), Settings.michael_hartl.home %>
+  </small>
+  <nav>
+    <ul>
+      <li><%= link_to t(".a_about"), about_path %></li>
+      <li><%= link_to t(".a_contact"), contact_path %></li>
+      <li><%= link_to t(".a_rails_tut_new"), Settings.rails_tut.news %></li>
+    </ul>
+  </nav>
+</footer>
