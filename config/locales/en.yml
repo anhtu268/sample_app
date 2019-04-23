@@ -3,8 +3,13 @@ en:
     application:
       base_title: "Ruby on Rails Tutorial Sample App"
     header:
+      nav_acc: "Account"
       nav_home: "Home"
       nav_help: "Help"
+      nav_users: "Users"
+      nav_profile: "Profile"
+      nav_setting: "Setting"
+      nav_logout: "Log out"
       nav_login: "Log in"
     footer:
       small_1: "The"
@@ -60,7 +65,18 @@ en:
       form_pwd_cof: "Confirmation"
       form_submit: "Create my account"
 
+  sessions:
+    new:
+      page_title: "Log in"
+      form_email: "Email"
+      form_pwd: "Password"
+      form_submit: "Log in"
+      p_1: "New user?"
+      a_1: "Sign up now!"
+
   controllers:
     users:
       create_success: "Welcome to the Sample App!"
       show_error: "User not found"
+    sessions:
+      login_error: "Invalid email/password combination"
