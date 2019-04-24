@@ -11,6 +11,7 @@ en:
       nav_setting: "Setting"
       nav_logout: "Log out"
       nav_login: "Log in"
+      sample_app: "sample app"
     footer:
       small_1: "The"
       small_2: "by"
@@ -57,13 +58,23 @@ en:
       a_5: "Contact page"
 
   users:
+    index:
+      page_title: "All users"
+    user:
+      del: "delete"
+      confirm: "You sure?"
     new:
       page_title: "Sign up"
+      form_submit: "Create my account"
+    edit:
+      page_title: "Update your profile"
+      form_submit: "Save changes"
+      gravatar: "change"
+    form:
       form_name: "Name"
       form_email: "Email"
       form_pwd: "Password"
       form_pwd_cof: "Confirmation"
-      form_submit: "Create my account"
 
   sessions:
     new:
@@ -78,6 +89,10 @@ en:
   controllers:
     users:
       create_success: "Welcome to the Sample App!"
-      show_error: "User not found"
+      update_success: "Profile updated"
+      login_check: "Please log in."
+      destroy_success: "User deleted"
+      destroy_fail: "Can't delete"
+      load_user_error: "User not found"
     sessions:
       login_error: "Invalid email/password combination"
