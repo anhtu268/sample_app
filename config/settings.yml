@@ -37,3 +37,7 @@ views:
 controllers:
   users:
     pag: 10
+
+models:
+  user:
+    waiting_time: 2

@@ -83,6 +83,7 @@ en:
       form_pwd: "Password"
       form_submit: "Log in"
       form_rem: "Remember me on this computer"
+      form_forgot: "(forgot password)"
       p_1: "New user?"
       a_1: "Sign up now!"
 
@@ -93,13 +94,29 @@ en:
       p_2: "Welcome to the Sample App! Click on the link below to activate your account:"
       a_active: "Activate"
     password_reset:
-      page_title: "Actived"
-      p_1: ", find me in app/views/user_mailer/password_reset.html.erb"
+      page_title: "Password reset"
+      p_1: "To reset your password click the link below:"
+      a_reset: "Reset password"
+      p_2: "This link will expire in two hours."
+      p_3: "If you did not request your password to be reset, please ignore this email and
+        your password will stay as it is."
+
+  password_resets:
+    new:
+      page_title: "Forgot password"
+      form_email: "Email"
+      form_submit: "Submit"
+    edit:
+      page_title: "Reset password"
+      form_pwd: "Password"
+      form_pwd_cof: "Confirmation"
+      form_submit: "Update password"
 
   mailers:
     user:
       greeting: "Hi"
-      subject: "Account activation"
+      subject_a: "Account activation"
+      subject_r: "Password reset"
 
   controllers:
     users:
@@ -115,3 +132,10 @@ en:
     account_activations:
       edit_success: "Account activated!"
       edit_fail: "Invalid activation link"
+    password_resets:
+      create_success: "Email sent with password reset instructions"
+      create_fail: "Email address not found"
+      update_success: "Password has been reset."
+      update_fail: "can't be empty"
+      pass_expired: "Password reset has expired."
+      not_found: "Email address not found"
