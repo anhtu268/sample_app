@@ -86,9 +86,24 @@ en:
       p_1: "New user?"
       a_1: "Sign up now!"
 
+  user_mailer:
+    account_activation:
+      page_title: "Actived"
+      p_1: "Hi"
+      p_2: "Welcome to the Sample App! Click on the link below to activate your account:"
+      a_active: "Activate"
+    password_reset:
+      page_title: "Actived"
+      p_1: ", find me in app/views/user_mailer/password_reset.html.erb"
+
+  mailers:
+    user:
+      greeting: "Hi"
+      subject: "Account activation"
+
   controllers:
     users:
-      create_success: "Welcome to the Sample App!"
+      create_success: "Please check your email to activate your account."
       update_success: "Profile updated"
       login_check: "Please log in."
       destroy_success: "User deleted"
@@ -96,3 +111,7 @@ en:
       load_user_error: "User not found"
     sessions:
       login_error: "Invalid email/password combination"
+      active_fail: "Account not activated. Check your email for the activation link."
+    account_activations:
+      edit_success: "Account activated!"
+      edit_fail: "Invalid activation link"

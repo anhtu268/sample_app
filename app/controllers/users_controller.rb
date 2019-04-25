@@ -1,14 +1,18 @@
 class UsersController < ApplicationController
-  before_action :logged_in_user, except: %i(new show)
+  before_action :logged_in_user, except: %i(new show create)
   before_action :correct_user, only: %i(edit update)
   before_action :admin_user, only: %i(destroy)
   before_action :load_user, except: %i(new index create)
 
   def index
-    @users = User.order(:name).page(params[:page]).per Settings.controllers.users.pag
+    @users = User.activated.order(:name).page(params[:page])
+      .per Settings.controllers.users.pag
   end
 
-  def show; end
+  def show
+    return if @user.activated
+    redirect_to root_url
+  end
 
   def new
     @user = User.new
@@ -17,9 +21,9 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
-      log_in @user
-      flash[:success] = t "controllers.users.create_success"
-      redirect_to users_url
+      @user.send_activation_email
+      flash[:info] = t "controllers.users.create_success"
+      redirect_to root_url
     else
       render :new
     end
