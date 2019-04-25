@@ -24,6 +24,12 @@ en:
   shared:
     error_messages:
       the_form_contains: "The form contains"
+    user_info:
+      profile: "view my profile"
+    micropost_form:
+      form_field: "Compose new micropost..."
+      form_submit: "Post"
+      alert: "Maximum file size is 5MB. Please choose a smaller file."
 
   static_pages:
     home:
@@ -34,6 +40,7 @@ en:
       kitty_alt: "Rails logo"
       rails_logo_alt: "A kitty"
       sign_up_but: "Sign up now!"
+      h3: "Micropost Feed"
     help:
       page_title: "Help"
       p_4: "Get help on the Ruby on Rails Tutorial at the"
@@ -75,6 +82,8 @@ en:
       form_email: "Email"
       form_pwd: "Password"
       form_pwd_cof: "Confirmation"
+    show:
+      h3: "Microposts"
 
   sessions:
     new:
@@ -112,6 +121,12 @@ en:
       form_pwd_cof: "Confirmation"
       form_submit: "Update password"
 
+  microposts:
+    micropost:
+      span_1: "Posted"
+      span_2: "ago."
+      delete: "delete"
+      confirm: "You sure?"
   mailers:
     user:
       greeting: "Hi"
@@ -139,3 +154,10 @@ en:
       update_fail: "can't be empty"
       pass_expired: "Password reset has expired."
       not_found: "Email address not found"
+    microposts:
+      create_success: "Micropost created!"
+      destroy_success: "Micropost deleted"
+
+  models:
+    micropost:
+      pic_error: "should be less than 5MB"
