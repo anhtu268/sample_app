@@ -30,6 +30,9 @@ en:
       form_field: "Compose new micropost..."
       form_submit: "Post"
       alert: "Maximum file size is 5MB. Please choose a smaller file."
+    stats:
+      following: "following"
+      follower: "followers"
 
   static_pages:
     home:
@@ -84,6 +87,13 @@ en:
       form_pwd_cof: "Confirmation"
     show:
       h3: "Microposts"
+    follow:
+      submit: "Follow"
+    unfollow:
+      submit: "Unfollow"
+    show_follow:
+      profile: "view my profile"
+      microposts: "Microposts:"
 
   sessions:
     new:
@@ -141,6 +151,8 @@ en:
       destroy_success: "User deleted"
       destroy_fail: "Can't delete"
       load_user_error: "User not found"
+      following: "Following"
+      follower: "Followers"
     sessions:
       login_error: "Invalid email/password combination"
       active_fail: "Account not activated. Check your email for the activation link."

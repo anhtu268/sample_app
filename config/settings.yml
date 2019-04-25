@@ -35,6 +35,8 @@ views:
   users:
     user:
       size: 50
+    show_follow:
+      size: 30
   microposts:
     micropost:
       size: 50
