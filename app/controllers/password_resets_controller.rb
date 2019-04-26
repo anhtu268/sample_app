@@ -9,6 +9,7 @@ class PasswordResetsController < ApplicationController
     @user = User.find_by email: params[:password_reset][:email].downcase
     if @user
       return unless @user.create_reset_digest
+      @user.create_reset_digest
       @user.send_password_reset_email
       flash[:info] = t "controllers.password_resets.create_success"
       redirect_to root_url

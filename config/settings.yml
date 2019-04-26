@@ -11,6 +11,8 @@ validates:
     maximum_name: 50
     maximum_email: 255
     minimum_pass: 6
+  micropost:
+    maximum_content: 140
 
 helper:
   users:
@@ -33,11 +35,27 @@ views:
   users:
     user:
       size: 50
+  microposts:
+    micropost:
+      size: 50
+  shared:
+    user_info:
+      size: 50
 
 controllers:
   users:
+    pag: 10
+  microposts:
+    pag: 10
+  static_pages:
     pag: 10
 
 models:
   user:
     waiting_time: 2
+  micropost:
+    pic_size: 5
+
+picture:
+  formats: "image/jpeg,image/gif,image/png"
+  resize: 400

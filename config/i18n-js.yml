@@ -1,0 +1,3 @@
+translations:
+- file: "public/javascripts/micropost_form.js"
+  only: "*"
